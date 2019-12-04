@@ -4,7 +4,10 @@
   "description": "Creates album of photos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/bot/bot.js",
+    "build": "gulp",
+    "dev": "gulp dev"
   },
   "keywords": [
     "telegram",
@@ -13,9 +16,18 @@
   "author": "123",
   "license": "MIT",
   "dependencies": {
-    "@types/rc": "^1.1.0",
+    "pg": "^7.14.0",
+    "pg-promise": "^10.3.1",
     "rc": "^1.2.8",
-    "telegraf": "^3.33.3",
+    "telegraf": "^3.33.3"
+  },
+  "devDependencies": {
+    "@types/rc": "^1.1.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "typescript": "^3.7.2"
   }
 }
